@@ -28,6 +28,25 @@ h1 {
     margin: 0;
 }
 
+.subtitle {
+    font-size: 50px;
+}
+
+h2, h3 {
+    margin: none;
+    font-weight: 300;
+}
+
+h3 {
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero-section {
     margin-top: 17vh;
     text-align: center;
@@ -42,13 +61,23 @@ footer {
     bottom: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100vw;
 }
 
 footer ul {
     display: flex;
     padding: 30px;
+}
+
+.options {
+    display: flex;
+}
+
+.options a {
+    margin: 10px;
 }
 
 a {
@@ -66,6 +95,12 @@ a {
     top: 27vh;
 }
 
+@media only screen and (max-width: 600px) {
+    .socials {
+        display: none;
+    }
+}
+
 .social {
     width: 100px;
     height: 33%;
@@ -74,8 +109,45 @@ a {
 .wave {
     fill: rgb(0,0,0);
     width: 100vw;
-    height: 65vh;
+    height: 60vh;
     position: fixed;
     bottom: 0;
     left: 0;
+}
+
+.social svg {
+    fill: rgb(255,255,255);
+}
+
+a:hover {
+    color: rgb(255,0,166);
+}
+
+.work-details {
+    width: 50%;
+}
+
+.work-details td {
+    padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .work-details {
+        width: 80%;
+    }
+
+    .work-details td {
+        padding: 5px;
+    }
+}
+
+.sub-pages-footer {
+    position: relative;
+}
+
+/* About Me*/
+
+.about-me {
+    width: 50%;
+    text-align: center;
 }
